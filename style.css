@@ -242,6 +242,40 @@ footer{
     color: #15ff00;
     background-color: #0b8a00;
 }
+/* ===== GLOBAL BACKGROUND ===== */
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(
+    -45deg,
+    #0f2027,
+    #203a43,
+    #2c5364,
+    #1c1c3c
+  );
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+  color: white;
+}
+
+/* Smooth animation */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.section {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 18px;
+  max-width: 1100px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+
 
 
 
